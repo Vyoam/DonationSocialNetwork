@@ -1,0 +1,33 @@
+﻿@using DSN.Models
+@model DSN.Models.UserViewModel
+@{
+    //Layout = null;
+}
+
+@foreach (IndividualViewModel item in Model.Individuals)
+{
+    <div class="col-md-6 col-md-offset-3 well well-lg">
+        <div>
+            <span class="glyphicon glyphicon-user " aria-hidden="true"></span>
+        </div>
+        <div>
+            <a href="@Url.Action("UserProfile","Home", new { userId = item.Id})"><h1>@Html.DisplayFor(modelitem => item.Name)</h1></a>
+            <p>@Html.DisplayFor(modelitem => item.Title) at @Html.DisplayFor(modelitem => item.Organisation)</p>
+            <p>Balanced Amount: Rs. 1000</p>
+        </div>
+    </div>
+}
+
+@foreach (OrganizationViewModel item in Model.Organizations)
+{
+    <div class="col-md-6 col-md-offset-3 well well-lg">
+        <div>
+            <span class="glyphicon glyphicon-user " aria-hidden="true"></span>
+        </div>
+        <div>
+            <a href="@Url.Action("UserProfile","Home", new { userId = item.Id})"><h1>@Html.DisplayFor(modelitem => item.Name)</h1></a>
+            <p>@Html.DisplayFor(modelitem => item.Description)</p>
+            <p>Balanced Amount: Rs. 1000</p>
+        </div>
+    </div>
+}

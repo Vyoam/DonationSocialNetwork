@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="ddad1e60-30da-4323-9a8f-f50c166d3bf3" ChangeDateTime="09/04/2016 13:24:28">
+    <Property Name="ElementName" Value="[dbo].[FK_Organization_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Organization]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Organization_User]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a98070d0-e75c-4341-8beb-a4d5850d9ffe" ChangeDateTime="09/04/2016 13:29:25">
+    <Property Name="ElementName" Value="[dbo].[Organization].[Title]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Organization]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Description" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="64de1fad-b79a-43f5-a34a-036bffbd751a" ChangeDateTime="09/04/2016 13:30:28">
+    <Property Name="ElementName" Value="[dbo].[Graph].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Graph]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id1" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b5e33c8d-dd5f-477d-a99a-16bea1a0807a" ChangeDateTime="09/04/2016 13:30:31">
+    <Property Name="ElementName" Value="[dbo].[Graph].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Graph]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id2" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="dbf1e4f4-9543-436c-8bc4-4dcf5a8d277c" ChangeDateTime="09/05/2016 10:18:19">
+    <Property Name="ElementName" Value="[dbo].[GetNetwork]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[GeUsersNetwork]" />
+  </Operation>
+</Operations>

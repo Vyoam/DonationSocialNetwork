@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Graph]
+(
+	[Id1] INT NOT NULL, 
+    [Id2] INT NOT NULL, 
+    CONSTRAINT [FK_Graph_User1] FOREIGN KEY (Id1) REFERENCES [User](Id), 
+    CONSTRAINT [FK_Graph_User2] FOREIGN KEY (Id2) REFERENCES [User](Id) 
+)
