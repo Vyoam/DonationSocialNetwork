@@ -58,6 +58,6 @@ VALUES (1, 2)
 INSERT INTO [Need]
 VALUES (1, 1, 'School Dress', 'School Dress', 500, 500, 11, 'pending approval')
 , (2, 1, 'Admission fees', 'Admission fees', 1000, 1000, 11, 'pending approval')
-, (2, 1, 'Admission fees', 'Admission fees', 1000, 1000, 11, 'pending approval')
+, (3, 1, 'Admission fees', 'Admission fees', 1000, 1000, 11, 'pending approval')
 ;
 

@@ -68,6 +68,7 @@
     <Build Include="Stored Procedures\GetUsersNetwork.sql" />
     <Build Include="Stored Procedures\GetNetwork.sql" />
     <Build Include="Tables\Need.sql" />
+    <Build Include="Stored Procedures\GetApprovals.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DSNDb.refactorlog" />
