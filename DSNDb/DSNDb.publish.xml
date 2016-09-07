@@ -4,7 +4,7 @@
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseName>DSNDb</TargetDatabaseName>
     <DeployScriptFileName>DSNDb.sql</DeployScriptFileName>
-    <TargetConnectionString>Data Source=WW-HW1ZDC2;Integrated Security=True;Pooling=False</TargetConnectionString>
+    <TargetConnectionString>Data Source=localhost;Integrated Security=True;Pooling=False</TargetConnectionString>
     <ProfileVersionNumber>1</ProfileVersionNumber>
   </PropertyGroup>
 </Project>

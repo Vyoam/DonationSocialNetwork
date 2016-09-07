@@ -7,6 +7,6 @@
     [Actual Amount] INT NOT NULL, 
     [Balance Amount] INT NOT NULL, 
     [Facilitator_Id] INT NOT NULL, 
-    [Approval_Status] VARCHAR(50) NOT NULL, 
+    [Approval_Status] CHAR(1) NOT NULL, 
     CONSTRAINT [FK_Need_ToUser] FOREIGN KEY (User_Id) REFERENCES [User](Id)
 )
