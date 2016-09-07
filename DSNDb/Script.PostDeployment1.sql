@@ -13,6 +13,7 @@ DELETE FROM [dbo].[Graph];
 DELETE FROM [dbo].[Individual] ;
 DELETE FROM [dbo].[Organization] ;
 DELETE FROM [dbo].[User] ;
+DELETE FROM [dbo].[Need];
 
 INSERT INTO [dbo].[User] 
 VALUES (1, 'individual')
@@ -24,7 +25,8 @@ VALUES (1, 'individual')
 , (7, 'individual')
 , (8, 'individual')
 , (9, 'organization')
-, (10, 'organization') 
+, (10, 'organization')
+, (11, 'organization') 
 ;
 
 INSERT INTO [Individual]  
@@ -41,6 +43,7 @@ VALUES (1, 'Aditya', 'Student', 'MTB School')
 INSERT INTO [Organization]
 VALUES (9, 'Kothari Prathamik Shala', 'Primary School')
 , (10, 'Ugly Indians', 'Street Spot fixing NGO')
+, (11, 'MTB School', 'School')
 ;
 
 INSERT INTO [Graph]
@@ -51,3 +54,10 @@ VALUES (1, 2)
 , (1, 6)
 , (1, 9)
 ;
+
+INSERT INTO [Need]
+VALUES (1, 1, 'School Dress', 'School Dress', 500, 500, 11, 'pending approval')
+, (2, 1, 'Admission fees', 'Admission fees', 1000, 1000, 11, 'pending approval')
+, (2, 1, 'Admission fees', 'Admission fees', 1000, 1000, 11, 'pending approval')
+;
+

@@ -20,17 +20,25 @@ namespace DSN.Controllers
 
         public ActionResult Index()
         {
-            //PopulateUsers();
-            //return View(users.GetRange(0,6));
             return View(userProfilesDataAccess.GetUsers(1));
         }
 
+        //public ActionResult Index()
+        //{
+        //    PopulateUsers();
+        //    return View(users.GetRange(0,6));
+        //}
+
         public ActionResult NetWork()
         {
-            //PopulateUsers();
-            //return View(users);
             return View(userProfilesDataAccess.GetUsers());
         }
+
+        //public ActionResult NetWork()
+        //{
+        //    PopulateUsers();
+        //    return View(users);
+        //}
 
         /*
         Expense(id, user_id, description, actual amount, balance amount, facilitator_id, approval status)
@@ -77,9 +85,9 @@ namespace DSN.Controllers
                 return;
             }
             expenses = new List<ExpenseViewModel>();
-            expenses.Add(new ExpenseViewModel {Id = 1, UserId = 2, Description = "Admission fees", ActualAmout = 1000, BalanceAmount = 500});
-            expenses.Add(new ExpenseViewModel { Id = 2, UserId = 2, Description = "Exam fees", ActualAmout = 1000, BalanceAmount = 500 });
-            expenses.Add(new ExpenseViewModel { Id = 3, UserId = 2, Description = "School picnic", ActualAmout = 1000, BalanceAmount = 500 });
+            expenses.Add(new ExpenseViewModel {Id = 1, UserId = 2, Title = "Admission fees", ActualAmout = 1000, BalanceAmount = 500});
+            expenses.Add(new ExpenseViewModel { Id = 2, UserId = 2, Title = "Exam fees", ActualAmout = 1000, BalanceAmount = 500 });
+            expenses.Add(new ExpenseViewModel { Id = 3, UserId = 2, Title = "School picnic", ActualAmout = 1000, BalanceAmount = 500 });
 
         }
     }
